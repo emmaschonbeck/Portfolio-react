@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  background: var(--background-color);
+}
+
+:root {
+  --background-color: linear-gradient(to right, #272727 0%, #38273B 100%);
+  --text-color-light: #fff;
+  --text-color-pink: #DF78B9;
+}
+
+#home-wrapper {
+  padding: 2rem 5rem;
+}
+
+/* 
+  HEADER
+*/
+
+.header-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: auto;
+  padding: 0 2rem;
+}
+
+.header-wrapper h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-color-light);
+}
+
+.header-btn {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 4rem;
+}
+
+.header-btn button {
+  border: none;
+  padding: .2rem;
+  background-color: transparent;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text-color-light);
+}
+
+/* 
+  HERO
+*/
+
+.hero-title {
+  font-size: 75px;
+  font-weight: 800;
+  line-height: 1.2;
+  color: var(--text-color-light);
+}
+
+.highlight {
+  color: var(--text-color-pink);
+}
