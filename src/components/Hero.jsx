@@ -2,24 +2,24 @@ import React from 'react'
 
 const Hero = () => {
   return (
-    <div className='hero-wrapper'>
+    <div id='hero-wrapper'>
       <div className='hero-text'>
             <h2>Hey, I'm Emma</h2>
             <h1 class="hero-title">
                   <span class="highlight">Full</span>stack<br />
                   Developer
             </h1>
-            <p>I’m a fullstack developer based in Sweden, I’ll help you build a beautiful website your users will love.</p>
+            <p>I’m a fullstack developer based in Sweden, I’ll help you build a <br /> beautiful website your users will love.</p>
       </div>
-      <div className=''>
+      <div className='hero-right'>
             <div className='hero-img'>
                   <img src="/images/hero-img.jpg" alt="" />
             </div>
             <div className='social-icons'>
                   <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  width="32"
-                  height="32"
+                  width="40"
+                  height="40"
                   viewBox="0 0 24 24"
                   fill="none"
                   stroke="#ffffffff"
@@ -36,8 +36,8 @@ const Hero = () => {
 
                   <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  width="32"
-                  height="32"
+                  width="40"
+                  height="40"
                   viewBox="0 0 24 24"
                   fill="none"
                   stroke="#ffffffff"
@@ -50,8 +50,8 @@ const Hero = () => {
 
                   <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  width="32"
-                  height="32"
+                  width="40"
+                  height="40"
                   viewBox="0 0 24 24"
                   fill="none"
                   stroke="#ffffffff"

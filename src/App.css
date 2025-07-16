@@ -10,6 +10,7 @@ body {
   font-weight: 400;
   font-style: normal;
   background: var(--background-color);
+  padding: 2.5rem 15rem;
 }
 
 :root {
@@ -19,20 +20,25 @@ body {
 }
 
 #home-wrapper {
-  padding: 2rem 5rem;
 }
-
-/* 
-  HEADER
-*/
 
 .header-wrapper {
   position: relative;
   display: flex;
   align-items: center;
   height: auto;
-  padding: 0 2rem;
+  margin-bottom: 9rem;
 }
+
+#hero-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* 
+  HEADER
+*/
 
 .header-wrapper h3 {
   font-size: 1rem;
@@ -61,8 +67,24 @@ body {
   HERO
 */
 
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  gap: .8rem;
+}
+
+.hero-text h2 {
+  font-size: 2.5rem;
+  color: var(--text-color-pink);
+}
+
+.hero-text p {
+  font-size: 24px;
+  color: var(--text-color-light);
+}
+
 .hero-title {
-  font-size: 75px;
+  font-size: 85px;
   font-weight: 800;
   line-height: 1.2;
   color: var(--text-color-light);
@@ -70,4 +92,25 @@ body {
 
 .highlight {
   color: var(--text-color-pink);
+}
+
+.hero-img img {
+  width: 350px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+}
+
+.hero-right {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-right: 14rem;
+}
+
+.social-icons {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
 }
