@@ -16,13 +16,15 @@ body {
 :root {
   --background-color: linear-gradient(to right, #272727 0%, #38273B 100%);
   --text-color-light: #fff;
+  --text-color-light-opacity: rgba(255, 255, 255, 0.4);
   --text-color-pink: #DF78B9;
+  --text-color-pink-opacity: rgba(223, 120, 185, 0.6);
 }
 
 #home-wrapper {
 }
 
-.header-wrapper {
+#header-wrapper {
   position: relative;
   display: flex;
   align-items: center;
@@ -34,6 +36,45 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+#skills-wrapper {
+  margin-top: 7rem;
+}
+
+#about-wrapper {
+  margin-top: 4rem;
+
+  p {
+    font-size: 20px;
+    color: var(--text-color-light);
+    margin-top: 1rem;
+  }
+}
+
+#footer-wrapper {
+  margin-top: 4rem;
+}
+
+#linkedin-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 7rem;
+
+  h2 {
+    font-size: 24px;
+    color: var(--text-color-pink);
+  }
+}
+
+.section-header {
+  display: flex;
+  align-items: center;
+  font-size: 40px;
+  font-weight: 800;
+  color: var(--text-color-pink);
 }
 
 /* 
@@ -113,4 +154,71 @@ body {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+}
+
+/* 
+  SKILLS
+*/
+
+.highlight2 {
+  color: var(--text-color-light);
+}
+
+.highlight2::after {
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  margin-left: 2px;
+  background-color: var(--text-color-pink);
+  border-radius: 50%;
+}
+
+.skills-columns {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 6rem;
+  margin-top: 2rem;
+}
+
+.skills-categories {
+  display: flex;
+  flex-direction: column;
+  gap: .7rem;
+
+  h3 {
+    font-size: 20px;
+    font-weight: 800;
+    color: var(--text-color-pink);
+  }
+}
+
+.skills {
+  display: flex;
+  flex-direction: column;
+  gap: .3rem;
+  margin-top: .3rem;
+  font-size: 1rem;
+  color: var(--text-color-pink-opacity);
+}
+
+/* 
+  FOOTER
+*/
+
+.contact-details {
+  display: flex;
+  align-items: center;
+  gap: .2rem;
+  font-size: 17px;
+  color: var(--text-color-light);
+}
+
+.copyright-text {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5rem;
+  font-size: 15px;
+  color: var(--text-color-light-opacity);
 }
