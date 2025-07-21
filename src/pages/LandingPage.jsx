@@ -6,6 +6,7 @@ import Footer from '../components/Footer'
 import Linkedin from '../components/Linkedin'
 import About from '../components/About'
 import ProjectsShowcase from '../components/ProjectsShowcase'
+import Experience from '../components/Experience'
 
 const LandingPage = () => {
   return (
@@ -13,6 +14,7 @@ const LandingPage = () => {
             <Header />
             <Hero />
             <Skills />
+            <Experience />
             <ProjectsShowcase />
             <About />
             <Linkedin />
