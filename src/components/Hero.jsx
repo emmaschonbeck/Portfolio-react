@@ -10,7 +10,7 @@ const Hero = () => {
                   <span class="highlight">Full</span>stack<br />
                   Developer
             </h1>
-            <p>I’m a fullstack developer based in Sweden, I’ll help you build a <br /> beautiful website your users will love.</p>
+            <p>I’m a fullstack developer based in Sweden, I’ll help you build a beautiful website your users will love.</p>
       </div>
       <div className='hero-right'>
             <div className='hero-img'>
