@@ -7,7 +7,6 @@
 html, body { height: 100%; }
 
 html {
-  background: var(--background-color);
 }
 
 body {
@@ -15,13 +14,14 @@ body {
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-  background: transparent;
+  background: var(--background-color-1);
   margin: 0;
   padding: 0;
 }
 
 :root {
-  --background-color: linear-gradient(to right, #272727 0%, #38273B 100%);
+  --background-color-1: #26232b;
+  --background-color-2: #2B2333;
   --text-color-light: #fff;
   --text-color-light-opacity: rgba(255, 255, 255, 0.4);
   --text-color-pink: #DF78B9;
@@ -30,11 +30,21 @@ body {
 }
 
 .section {
-  margin-top: 4rem;
+  width: 100%;
+  padding-block: 2rem;
+}
+
+.section--bg1 { background: var(--background-color-1); }
+.section--bg2 { background: var(--background-color-2); }
+
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding-inline: 2rem;
 }
 
 #home-wrapper {
-  max-width: 1000px;
+  max-width: 1300px;
   margin-inline: auto;
   padding: 2rem;
   background: transparent;
@@ -57,7 +67,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 7rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 
 #about-wrapper p {
@@ -71,7 +82,7 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  margin-top: 7rem;
+  margin-top: 2rem;
 }
 
 #linkedin-wrapper h2 {
@@ -97,13 +108,6 @@ body {
   color: var(--text-color-pink);
 }
 
-#resume-wrapper {
-  max-width: 1000px;
-  margin-inline: auto;
-  padding: 2rem;
-  background: transparent;
-}
-
 #projects-wrapper {
   max-width: 1000px;
   margin-inline: auto;
@@ -127,7 +131,7 @@ body {
 
 .header-btn {
   position: absolute;
-  left: 70%;
+  left: 80.5%;
   transform: translateX(-50%);
   display: flex;
   gap: 4rem;
@@ -155,9 +159,9 @@ body {
 /* HERO */
 .hero {
   display: grid;
-  grid-template-columns: 1.2fr 0.8fr;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: clamp(1rem, 2.5vw, 3.5rem); 
   align-items: center;
-  gap: clamp(1rem, 3vw, 4rem);
   padding-inline: clamp(1rem, 4vw, 6rem);
 }
 
@@ -179,25 +183,29 @@ body {
 .hero-text {
   display: flex;
   flex-direction: column;
-  gap: clamp(.5rem, 1.2vw, 1rem);
-  max-width: 60ch;
+  gap: clamp(.6rem, 1.4vw, 1.2rem);
+  max-width: 70ch;
 }
 
 .hero-text h2 {
-  font-size: clamp(1.25rem, 2.2vw, 2rem);
+  font-size: clamp(1.25rem, 2.4vw, 2.2rem);
+  margin-bottom: .5rem;
   color: var(--text-color-pink);
 }
 
 .hero-title {
-  font-size: clamp(2.625rem, 6vw, 5.3125rem);
-  font-weight: 800;
-  line-height: clamp(1.15, 2.5vw, 1.25);
+  font-size: clamp(2.8rem, 6.5vw, 5.6rem);
+  line-height: 1;
+  margin-bottom: 1rem;  
   color: var(--text-color-light);
 }
 
 .hero-text p {
   font-size: clamp(1rem, 1.6vw, 1.5rem);
   color: var(--text-color-light);
+  max-width: 90ch;
+  line-height: 1.2;
+  margin-top: .25rem;
 }
 
 .highlight { color: var(--text-color-pink); }
@@ -231,6 +239,7 @@ body {
 .social-icons a svg {
   transition: transform .25s ease, filter .25s ease;
   cursor: pointer;
+  color: var(--text-color-pink);
 }
 
 .social-icons a:hover svg {
@@ -451,6 +460,17 @@ body {
 .coming-soon-card p {
   font-size: 1rem;
   opacity: 0.8;
+}
+
+.resume-link {
+  text-decoration: none;
+  display: inline-flex;
+  gap: 0;
+  position: relative;
+}
+
+.resume-icon {
+  color: white;
 }
 
 @keyframes fadeIn {

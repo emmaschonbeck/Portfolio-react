@@ -10,16 +10,48 @@ import Experience from '../components/Experience'
 
 const LandingPage = () => {
   return (
-      <div id='home-wrapper'>
-            <Header />
-            <Hero />
-            <Skills />
-            <Experience />
-            <ProjectsShowcase />
-            <About />
-            <Linkedin />
-            <Footer />
-      </div>
+        <>
+          <section className="section section--bg1">
+              <div className="container">
+                <Header />
+              </div>
+            </section>
+            <section className="section section--bg2">
+              <div className="container">
+                <Hero />
+              </div>
+            </section>
+            <section className="section section--bg1">
+              <div className="container">
+                <Skills />
+              </div>
+            </section>
+            <section className="section section--bg2">
+              <div className="container">
+                <Experience />
+              </div>
+            </section>
+            <section className="section section--bg1">
+              <div className="container">
+                <ProjectsShowcase />
+              </div>
+            </section>
+            <section className="section section--bg2">
+              <div className="container">
+                <About />
+              </div>
+            </section>
+            <section className="section section--bg2">
+              <div className="container">
+                <Linkedin />
+              </div>
+            </section>
+            <section className="section section--bg1">
+              <div className="container">
+                <Footer />
+              </div>
+            </section>
+        </>
   )
 }
 

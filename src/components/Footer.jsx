@@ -2,7 +2,7 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <div id='footer-wrapper' className='section'>
+    <div id='footer-wrapper'>
       <div className='contact-details'>
         <svg
           xmlns="http://www.w3.org/2000/svg"
