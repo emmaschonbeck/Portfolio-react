@@ -7,7 +7,7 @@ const Skills = () => {
             <span className='highlight2'>Skills</span>
       </h1>
       <div className='skills-columns'>
-            <div className='skills-categories'>
+            <div className='skills-categories visible'>
                   <h3>Frontend</h3>
                   <div className='skills'>
                         <p>HTML</p>
@@ -16,7 +16,7 @@ const Skills = () => {
                         <p>ReactJS</p>
                   </div>
             </div>
-            <div className='skills-categories'>
+            <div className='skills-categories visible'>
                   <h3>Backend</h3>
                   <div className='skills'>
                         <p>C#</p>
@@ -25,7 +25,7 @@ const Skills = () => {
                         <p>Azure</p>
                   </div>
             </div>
-            <div className='skills-categories'>
+            <div className='skills-categories visible'>
                   <h3>Others</h3>
                   <div className='skills'>
                         <p>GIT</p>
